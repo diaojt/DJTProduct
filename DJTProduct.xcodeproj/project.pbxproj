@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0FC9FF838F644E0FB679E30 /* libPods-DJTProduct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BD9602FF4524E7D8CF6E53 /* libPods-DJTProduct.a */; };
+		F33D420120EF53FD0071AFD0 /* DJTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420020EF53FD0071AFD0 /* DJTMainViewController.m */; };
+		F33D420420EF54AC0071AFD0 /* DJTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420320EF54AC0071AFD0 /* DJTNavigationViewController.m */; };
+		F33D420A20EF62B60071AFD0 /* DJTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420920EF62B60071AFD0 /* DJTTabBar.m */; };
+		F3757F5C20F7042B00A622A1 /* DJTViewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F5B20F7042B00A622A1 /* DJTViewFeatureViewController.m */; };
+		F3757F5F20F705E800A622A1 /* DJTNetFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F5E20F705E800A622A1 /* DJTNetFeatureViewController.m */; };
+		F3757F6520F7062C00A622A1 /* DJTPracticalFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6420F7062C00A622A1 /* DJTPracticalFeatureViewController.m */; };
+		F3757F6820F7065100A622A1 /* DJTTripartiteFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6720F7065100A622A1 /* DJTTripartiteFeatureViewController.m */; };
+		F3757F6C20F70C9E00A622A1 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6B20F70C9E00A622A1 /* UIView+Custom.m */; };
+		F3757F6F20F7377200A622A1 /* DJTNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6E20F7377200A622A1 /* DJTNavBar.m */; };
+		F3923B3E20EF4FB70078A2A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3923B3D20EF4FB70078A2A3 /* AppDelegate.m */; };
+		F3923B4620EF4FB80078A2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3923B4520EF4FB80078A2A3 /* Assets.xcassets */; };
+		F3923B4C20EF4FB80078A2A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3923B4B20EF4FB80078A2A3 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F3884A0CB408D44819AD9E0 /* Pods-DJTProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJTProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJTProduct/Pods-DJTProduct.release.xcconfig"; sourceTree = "<group>"; };
+		B2BD9602FF4524E7D8CF6E53 /* libPods-DJTProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DJTProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33D41FF20EF53FD0071AFD0 /* DJTMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTMainViewController.h; sourceTree = "<group>"; };
+		F33D420020EF53FD0071AFD0 /* DJTMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTMainViewController.m; sourceTree = "<group>"; };
+		F33D420220EF54AC0071AFD0 /* DJTNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTNavigationViewController.h; sourceTree = "<group>"; };
+		F33D420320EF54AC0071AFD0 /* DJTNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTNavigationViewController.m; sourceTree = "<group>"; };
+		F33D420820EF62B60071AFD0 /* DJTTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTTabBar.h; sourceTree = "<group>"; };
+		F33D420920EF62B60071AFD0 /* DJTTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTTabBar.m; sourceTree = "<group>"; };
+		F3757F5A20F7042B00A622A1 /* DJTViewFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTViewFeatureViewController.h; sourceTree = "<group>"; };
+		F3757F5B20F7042B00A622A1 /* DJTViewFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTViewFeatureViewController.m; sourceTree = "<group>"; };
+		F3757F5D20F705E800A622A1 /* DJTNetFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTNetFeatureViewController.h; sourceTree = "<group>"; };
+		F3757F5E20F705E800A622A1 /* DJTNetFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTNetFeatureViewController.m; sourceTree = "<group>"; };
+		F3757F6320F7062C00A622A1 /* DJTPracticalFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTPracticalFeatureViewController.h; sourceTree = "<group>"; };
+		F3757F6420F7062C00A622A1 /* DJTPracticalFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTPracticalFeatureViewController.m; sourceTree = "<group>"; };
+		F3757F6620F7065100A622A1 /* DJTTripartiteFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTTripartiteFeatureViewController.h; sourceTree = "<group>"; };
+		F3757F6720F7065100A622A1 /* DJTTripartiteFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTTripartiteFeatureViewController.m; sourceTree = "<group>"; };
+		F3757F6A20F70C9E00A622A1 /* UIView+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
+		F3757F6B20F70C9E00A622A1 /* UIView+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Custom.m"; sourceTree = "<group>"; };
+		F3757F6D20F7377200A622A1 /* DJTNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTNavBar.h; sourceTree = "<group>"; };
+		F3757F6E20F7377200A622A1 /* DJTNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTNavBar.m; sourceTree = "<group>"; };
+		F3923B3920EF4FB70078A2A3 /* DJTProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJTProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3923B3C20EF4FB70078A2A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3923B3D20EF4FB70078A2A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3923B4520EF4FB80078A2A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3923B4A20EF4FB80078A2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3923B4B20EF4FB80078A2A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F39E708720F5E3C200879A46 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F487F08124A99572F8D2CA9D /* Pods-DJTProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJTProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJTProduct/Pods-DJTProduct.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3923B3620EF4FB70078A2A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0FC9FF838F644E0FB679E30 /* libPods-DJTProduct.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C03C17A84B5D58D63CD7C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2BD9602FF4524E7D8CF6E53 /* libPods-DJTProduct.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94C1F5DA5AADC25C47C27F28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F487F08124A99572F8D2CA9D /* Pods-DJTProduct.debug.xcconfig */,
+				4F3884A0CB408D44819AD9E0 /* Pods-DJTProduct.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F33D41FD20EF51520071AFD0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F33D41FE20EF515D0071AFD0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F6A20F70C9E00A622A1 /* UIView+Custom.h */,
+				F3757F6B20F70C9E00A622A1 /* UIView+Custom.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F33D420520EF626E0071AFD0 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				F33D420820EF62B60071AFD0 /* DJTTabBar.h */,
+				F33D420920EF62B60071AFD0 /* DJTTabBar.m */,
+				F3757F6D20F7377200A622A1 /* DJTNavBar.h */,
+				F3757F6E20F7377200A622A1 /* DJTNavBar.m */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		F33D420620EF62770071AFD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F33D41FF20EF53FD0071AFD0 /* DJTMainViewController.h */,
+				F33D420020EF53FD0071AFD0 /* DJTMainViewController.m */,
+				F33D420220EF54AC0071AFD0 /* DJTNavigationViewController.h */,
+				F33D420320EF54AC0071AFD0 /* DJTNavigationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F33D420720EF62880071AFD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3757F4520F701F500A622A1 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F4920F702C900A622A1 /* PracticalFeature(实用) */,
+				F3757F4820F7028300A622A1 /* TripartiteFeature(三方) */,
+				F3757F4720F7027300A622A1 /* NetworkFeature(网络) */,
+				F3757F4620F7024500A622A1 /* ViewFeature(视图) */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F3757F4620F7024500A622A1 /* ViewFeature(视图) */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F4D20F7037B00A622A1 /* Tool */,
+				F3757F4C20F7037200A622A1 /* Controller */,
+				F3757F4B20F7036C00A622A1 /* View */,
+				F3757F4A20F7035200A622A1 /* Model */,
+			);
+			path = "ViewFeature(视图)";
+			sourceTree = "<group>";
+		};
+		F3757F4720F7027300A622A1 /* NetworkFeature(网络) */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F5120F7039F00A622A1 /* Model */,
+				F3757F5020F7039900A622A1 /* View */,
+				F3757F4F20F7038E00A622A1 /* Controller */,
+				F3757F4E20F7038300A622A1 /* Tool */,
+			);
+			path = "NetworkFeature(网络)";
+			sourceTree = "<group>";
+		};
+		F3757F4820F7028300A622A1 /* TripartiteFeature(三方) */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F5520F703BC00A622A1 /* Model */,
+				F3757F5420F703B700A622A1 /* View */,
+				F3757F5320F703AD00A622A1 /* Controller */,
+				F3757F5220F703A600A622A1 /* Tool */,
+			);
+			path = "TripartiteFeature(三方)";
+			sourceTree = "<group>";
+		};
+		F3757F4920F702C900A622A1 /* PracticalFeature(实用) */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F5920F703D400A622A1 /* Tool */,
+				F3757F5820F703CF00A622A1 /* View */,
+				F3757F5720F703C900A622A1 /* Controller */,
+				F3757F5620F703C400A622A1 /* Model */,
+			);
+			path = "PracticalFeature(实用)";
+			sourceTree = "<group>";
+		};
+		F3757F4A20F7035200A622A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3757F4B20F7036C00A622A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3757F4C20F7037200A622A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F5A20F7042B00A622A1 /* DJTViewFeatureViewController.h */,
+				F3757F5B20F7042B00A622A1 /* DJTViewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3757F4D20F7037B00A622A1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F3757F4E20F7038300A622A1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F3757F4F20F7038E00A622A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F5D20F705E800A622A1 /* DJTNetFeatureViewController.h */,
+				F3757F5E20F705E800A622A1 /* DJTNetFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3757F5020F7039900A622A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3757F5120F7039F00A622A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3757F5220F703A600A622A1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F3757F5320F703AD00A622A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F6620F7065100A622A1 /* DJTTripartiteFeatureViewController.h */,
+				F3757F6720F7065100A622A1 /* DJTTripartiteFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3757F5420F703B700A622A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3757F5520F703BC00A622A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3757F5620F703C400A622A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3757F5720F703C900A622A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F6320F7062C00A622A1 /* DJTPracticalFeatureViewController.h */,
+				F3757F6420F7062C00A622A1 /* DJTPracticalFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3757F5820F703CF00A622A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3757F5920F703D400A622A1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F3923B3020EF4FB70078A2A3 = {
+			isa = PBXGroup;
+			children = (
+				F3923B3B20EF4FB70078A2A3 /* DJTProduct */,
+				F3923B3A20EF4FB70078A2A3 /* Products */,
+				94C1F5DA5AADC25C47C27F28 /* Pods */,
+				5C03C17A84B5D58D63CD7C16 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3923B3A20EF4FB70078A2A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3923B3920EF4FB70078A2A3 /* DJTProduct.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3923B3B20EF4FB70078A2A3 /* DJTProduct */ = {
+			isa = PBXGroup;
+			children = (
+				F3923B5420EF4FD60078A2A3 /* Classes */,
+				F3923B5520EF4FED0078A2A3 /* Supporting Files */,
+			);
+			path = DJTProduct;
+			sourceTree = "<group>";
+		};
+		F3923B5220EF4FBE0078A2A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F33D420720EF62880071AFD0 /* Model */,
+				F33D420620EF62770071AFD0 /* Controller */,
+				F33D420520EF626E0071AFD0 /* VIew */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F3923B5320EF4FC50078A2A3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F3923B4B20EF4FB80078A2A3 /* main.m */,
+				F3923B3C20EF4FB70078A2A3 /* AppDelegate.h */,
+				F3923B3D20EF4FB70078A2A3 /* AppDelegate.m */,
+				F39E708720F5E3C200879A46 /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F3923B5420EF4FD60078A2A3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F3757F4520F701F500A622A1 /* Features */,
+				F3923B5220EF4FBE0078A2A3 /* Main */,
+				F33D41FE20EF515D0071AFD0 /* Category */,
+				F33D41FD20EF51520071AFD0 /* Tool */,
+				F3923B5320EF4FC50078A2A3 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F3923B5520EF4FED0078A2A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3923B4520EF4FB80078A2A3 /* Assets.xcassets */,
+				F3923B4A20EF4FB80078A2A3 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3923B3820EF4FB70078A2A3 /* DJTProduct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3923B4F20EF4FB80078A2A3 /* Build configuration list for PBXNativeTarget "DJTProduct" */;
+			buildPhases = (
+				C5AD585563F3CE0294904DB9 /* [CP] Check Pods Manifest.lock */,
+				F3923B3520EF4FB70078A2A3 /* Sources */,
+				F3923B3620EF4FB70078A2A3 /* Frameworks */,
+				F3923B3720EF4FB70078A2A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJTProduct;
+			productName = DJTProduct;
+			productReference = F3923B3920EF4FB70078A2A3 /* DJTProduct.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3923B3120EF4FB70078A2A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Smy_D;
+				TargetAttributes = {
+					F3923B3820EF4FB70078A2A3 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F3923B3420EF4FB70078A2A3 /* Build configuration list for PBXProject "DJTProduct" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3923B3020EF4FB70078A2A3;
+			productRefGroup = F3923B3A20EF4FB70078A2A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3923B3820EF4FB70078A2A3 /* DJTProduct */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3923B3720EF4FB70078A2A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3923B4620EF4FB80078A2A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5AD585563F3CE0294904DB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DJTProduct-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3923B3520EF4FB70078A2A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3757F5F20F705E800A622A1 /* DJTNetFeatureViewController.m in Sources */,
+				F33D420A20EF62B60071AFD0 /* DJTTabBar.m in Sources */,
+				F3757F6820F7065100A622A1 /* DJTTripartiteFeatureViewController.m in Sources */,
+				F3923B4C20EF4FB80078A2A3 /* main.m in Sources */,
+				F33D420420EF54AC0071AFD0 /* DJTNavigationViewController.m in Sources */,
+				F3757F6F20F7377200A622A1 /* DJTNavBar.m in Sources */,
+				F3757F5C20F7042B00A622A1 /* DJTViewFeatureViewController.m in Sources */,
+				F33D420120EF53FD0071AFD0 /* DJTMainViewController.m in Sources */,
+				F3923B3E20EF4FB70078A2A3 /* AppDelegate.m in Sources */,
+				F3757F6520F7062C00A622A1 /* DJTPracticalFeatureViewController.m in Sources */,
+				F3757F6C20F70C9E00A622A1 /* UIView+Custom.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3923B4D20EF4FB80078A2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3923B4E20EF4FB80078A2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3923B5020EF4FB80078A2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F487F08124A99572F8D2CA9D /* Pods-DJTProduct.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TR3456M99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//DJTProduct/Classes/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DJTProduct/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.500wcp.DJTProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3923B5120EF4FB80078A2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F3884A0CB408D44819AD9E0 /* Pods-DJTProduct.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TR3456M99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//DJTProduct/Classes/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DJTProduct/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.500wcp.DJTProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3923B3420EF4FB70078A2A3 /* Build configuration list for PBXProject "DJTProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3923B4D20EF4FB80078A2A3 /* Debug */,
+				F3923B4E20EF4FB80078A2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3923B4F20EF4FB80078A2A3 /* Build configuration list for PBXNativeTarget "DJTProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3923B5020EF4FB80078A2A3 /* Debug */,
+				F3923B5120EF4FB80078A2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3923B3120EF4FB70078A2A3 /* Project object */;
+}
