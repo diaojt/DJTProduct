@@ -17,10 +17,10 @@
 
 + (void)initialize
 {
-//    UIImage *bg = [UIImage imageNamed:@"navigationbarBackgroundWhite"];
-//    UINavigationBar *bar = [UINavigationBar appearance];
-//    [bar setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
-//    [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
+    UIImage *bg = [UIImage imageNamed:@"navigationbarBackgroundWhite"];
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
+    [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
     
 }
 

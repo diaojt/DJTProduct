@@ -8,54 +8,60 @@
 
 #import "DJTNavBar.h"
 
-//const CGFloat NavigationBarHeightIncrease = 40.f;
+// NavigationBar增加的高度
+CGFloat const NavigationBarHeightIncrease = 40.f;
 
 @implementation DJTNavBar
 
-//- (id)initWithCoder:(NSCoder *)aDecoder{
-//    self = [super initWithCoder:aDecoder];
-//
-//    if (self) {
-//        [self initialize];
-//    }
-//
-//    return self;
-//
-//}
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self initialize];
+    }
+    return self;
 
-//- (id)initWithFrame:(CGRect)frame
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//        [self initialize];
-//    }
-//    return self;
-//}
+}
 
-//- (void)layoutSubviews
-//{
-//    [super layoutSubviews];
-//
-//    NSArray *classNamesToReposition = @[@"_UIBarBackground",@"_UINavigationBarBackground"];
-//    for (UIView *view in [self subviews]) {
-//        if ([classNamesToReposition containsObject:NSStringFromClass([view class])]) {
-//
-//            CGRect bounds = [self bounds];
-//            CGRect frame = [view frame];
-//
-////            frame.origin.y = bounds.origin.y + NavigationBarHeightIncrease - 20.f;
-//            frame.size.height = bounds.size.height + NavigationBarHeightIncrease;
-//
-//            [view setFrame:frame];
-//        }
-//    }
-//}
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
+
+- (void)initialize {
+    [self setTransform:CGAffineTransformMakeTranslation(0, -(NavigationBarHeightIncrease))];
+}
 
 
-//- (CGSize)sizeThatFits:(CGSize)size
-//{
-//    CGSize navigationBarSize = [super sizeThatFits:size];
-//    navigationBarSize.height += NavigationBarHeightIncrease;
-//    return navigationBarSize;
-//}
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+
+    NSArray *classNamesToReposition = @[@"_UIBarBackground",@"_UINavigationBarContentView"];
+    for (UIView *view in [self subviews]) {
+        if ([classNamesToReposition containsObject:NSStringFromClass([view class])]) {
+
+            CGRect bounds = [self bounds];
+            CGRect frame = [view frame];
+            
+            bounds.size.height += NavigationBarHeightIncrease;
+            frame.size.height += NavigationBarHeightIncrease;
+            
+            [view setBounds:bounds];
+            [view setFrame:frame];
+        }
+    }
+}
+
+
+- (CGSize)sizeThatFits:(CGSize)size
+{
+    CGSize navigationBarSize = [super sizeThatFits:size];
+    navigationBarSize.height += NavigationBarHeightIncrease;
+    return navigationBarSize;
+}
 @end
