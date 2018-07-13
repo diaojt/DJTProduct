@@ -11,12 +11,15 @@
 		F33D420120EF53FD0071AFD0 /* DJTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420020EF53FD0071AFD0 /* DJTMainViewController.m */; };
 		F33D420420EF54AC0071AFD0 /* DJTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420320EF54AC0071AFD0 /* DJTNavigationViewController.m */; };
 		F33D420A20EF62B60071AFD0 /* DJTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420920EF62B60071AFD0 /* DJTTabBar.m */; };
+		F347AD6720F8A22C0024712A /* DJTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F347AD6620F8A22C0024712A /* DJTitleScrollView.m */; };
+		F347AD6D20F8A8090024712A /* DJTPagerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F347AD6C20F8A8090024712A /* DJTPagerProgressView.m */; };
 		F3757F5C20F7042B00A622A1 /* DJTViewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F5B20F7042B00A622A1 /* DJTViewFeatureViewController.m */; };
 		F3757F5F20F705E800A622A1 /* DJTNetFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F5E20F705E800A622A1 /* DJTNetFeatureViewController.m */; };
 		F3757F6520F7062C00A622A1 /* DJTPracticalFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6420F7062C00A622A1 /* DJTPracticalFeatureViewController.m */; };
 		F3757F6820F7065100A622A1 /* DJTTripartiteFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6720F7065100A622A1 /* DJTTripartiteFeatureViewController.m */; };
 		F3757F6C20F70C9E00A622A1 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6B20F70C9E00A622A1 /* UIView+Custom.m */; };
 		F3757F6F20F7377200A622A1 /* DJTNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6E20F7377200A622A1 /* DJTNavBar.m */; };
+		F3757F7220F875FC00A622A1 /* DJTViewFeatureNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F7120F875FC00A622A1 /* DJTViewFeatureNavBar.m */; };
 		F3923B3E20EF4FB70078A2A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3923B3D20EF4FB70078A2A3 /* AppDelegate.m */; };
 		F3923B4620EF4FB80078A2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3923B4520EF4FB80078A2A3 /* Assets.xcassets */; };
 		F3923B4C20EF4FB80078A2A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3923B4B20EF4FB80078A2A3 /* main.m */; };
@@ -31,6 +34,10 @@
 		F33D420320EF54AC0071AFD0 /* DJTNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTNavigationViewController.m; sourceTree = "<group>"; };
 		F33D420820EF62B60071AFD0 /* DJTTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTTabBar.h; sourceTree = "<group>"; };
 		F33D420920EF62B60071AFD0 /* DJTTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTTabBar.m; sourceTree = "<group>"; };
+		F347AD6520F8A22C0024712A /* DJTitleScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTitleScrollView.h; sourceTree = "<group>"; };
+		F347AD6620F8A22C0024712A /* DJTitleScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTitleScrollView.m; sourceTree = "<group>"; };
+		F347AD6B20F8A8090024712A /* DJTPagerProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTPagerProgressView.h; sourceTree = "<group>"; };
+		F347AD6C20F8A8090024712A /* DJTPagerProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTPagerProgressView.m; sourceTree = "<group>"; };
 		F3757F5A20F7042B00A622A1 /* DJTViewFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTViewFeatureViewController.h; sourceTree = "<group>"; };
 		F3757F5B20F7042B00A622A1 /* DJTViewFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTViewFeatureViewController.m; sourceTree = "<group>"; };
 		F3757F5D20F705E800A622A1 /* DJTNetFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTNetFeatureViewController.h; sourceTree = "<group>"; };
@@ -43,6 +50,8 @@
 		F3757F6B20F70C9E00A622A1 /* UIView+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Custom.m"; sourceTree = "<group>"; };
 		F3757F6D20F7377200A622A1 /* DJTNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTNavBar.h; sourceTree = "<group>"; };
 		F3757F6E20F7377200A622A1 /* DJTNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTNavBar.m; sourceTree = "<group>"; };
+		F3757F7020F875FC00A622A1 /* DJTViewFeatureNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTViewFeatureNavBar.h; sourceTree = "<group>"; };
+		F3757F7120F875FC00A622A1 /* DJTViewFeatureNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTViewFeatureNavBar.m; sourceTree = "<group>"; };
 		F3923B3920EF4FB70078A2A3 /* DJTProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJTProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3923B3C20EF4FB70078A2A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3923B3D20EF4FB70078A2A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,6 +136,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F347AD6320F8A1BD0024712A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F347AD6420F8A1CD0024712A /* DJTTitleScrollView(滑动条) */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F347AD6420F8A1CD0024712A /* DJTTitleScrollView(滑动条) */ = {
+			isa = PBXGroup;
+			children = (
+				F347AD6520F8A22C0024712A /* DJTitleScrollView.h */,
+				F347AD6620F8A22C0024712A /* DJTitleScrollView.m */,
+				F347AD6B20F8A8090024712A /* DJTPagerProgressView.h */,
+				F347AD6C20F8A8090024712A /* DJTPagerProgressView.m */,
+			);
+			path = "DJTTitleScrollView(滑动条)";
+			sourceTree = "<group>";
+		};
 		F3757F4520F701F500A622A1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +220,8 @@
 		F3757F4B20F7036C00A622A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3757F7020F875FC00A622A1 /* DJTViewFeatureNavBar.h */,
+				F3757F7120F875FC00A622A1 /* DJTViewFeatureNavBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +383,7 @@
 		F3923B5420EF4FD60078A2A3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F347AD6320F8A1BD0024712A /* CustomView */,
 				F3757F4520F701F500A622A1 /* Features */,
 				F3923B5220EF4FBE0078A2A3 /* Main */,
 				F33D41FE20EF515D0071AFD0 /* Category */,
@@ -461,14 +492,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F347AD6D20F8A8090024712A /* DJTPagerProgressView.m in Sources */,
 				F3757F5F20F705E800A622A1 /* DJTNetFeatureViewController.m in Sources */,
 				F33D420A20EF62B60071AFD0 /* DJTTabBar.m in Sources */,
 				F3757F6820F7065100A622A1 /* DJTTripartiteFeatureViewController.m in Sources */,
 				F3923B4C20EF4FB80078A2A3 /* main.m in Sources */,
 				F33D420420EF54AC0071AFD0 /* DJTNavigationViewController.m in Sources */,
+				F347AD6720F8A22C0024712A /* DJTitleScrollView.m in Sources */,
 				F3757F6F20F7377200A622A1 /* DJTNavBar.m in Sources */,
 				F3757F5C20F7042B00A622A1 /* DJTViewFeatureViewController.m in Sources */,
 				F33D420120EF53FD0071AFD0 /* DJTMainViewController.m in Sources */,
+				F3757F7220F875FC00A622A1 /* DJTViewFeatureNavBar.m in Sources */,
 				F3923B3E20EF4FB70078A2A3 /* AppDelegate.m in Sources */,
 				F3757F6520F7062C00A622A1 /* DJTPracticalFeatureViewController.m in Sources */,
 				F3757F6C20F70C9E00A622A1 /* UIView+Custom.m in Sources */,
@@ -530,7 +564,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -583,7 +617,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

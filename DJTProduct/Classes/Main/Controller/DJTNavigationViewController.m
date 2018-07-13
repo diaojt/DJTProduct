@@ -25,21 +25,14 @@
 }
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    //替换navBar
-    [self setValue:[[DJTNavBar alloc] init] forKey:@"navigationBar"];
-    
-
 }
 
 
 
 - (void)didReceiveMemoryWarning {
     
-    
     [super didReceiveMemoryWarning];
-
 }
 
 

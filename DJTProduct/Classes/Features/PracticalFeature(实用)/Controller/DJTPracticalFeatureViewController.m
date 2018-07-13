@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor redColor];
 
+    [self setupNavBar];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,4 +28,9 @@
     
 }
 
+- (void)setupNavBar
+{
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationController.navigationBar.translucent = YES;
+}
 @end

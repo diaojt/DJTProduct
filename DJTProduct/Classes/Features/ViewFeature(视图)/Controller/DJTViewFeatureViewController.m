@@ -7,15 +7,14 @@
 //
 
 #import "DJTViewFeatureViewController.h"
-
+#import "DJTViewFeatureNavBar.h"
 
 /**
  navBar向上滑动的距离，非iphoneX时为44+20，iphoneX时是44+10，因为刘海底部到navbar顶部有点缝隙，iphoneX的statusBar高度为44，但底部在刘海底部下边一点，并不是对齐刘海底部
  */
 #define scrollUpHeight  (CGFloat)(kIs_iPhoneX?(54.0):(64.0))
 
-extern CGFloat NavigationBarHeightIncrease;
-
+extern CGFloat const NavigationBarHeightIncrease;
 
 @interface DJTViewFeatureViewController ()<UIScrollViewDelegate>
 @property(strong, nonatomic) UIScrollView *contentView;
@@ -23,19 +22,29 @@ extern CGFloat NavigationBarHeightIncrease;
 
 @implementation DJTViewFeatureViewController
 
+#pragma mark - 生命周期方法
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNavBar];
     [self setupContentView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self setupTitleView];
 }
 
+#pragma mark - 设置视图
 - (void)setupNavBar
 {
+    //替换navBar
+    [self.navigationController setValue:[[DJTViewFeatureNavBar alloc] init] forKey:@"navigationBar"];
+}
+
+- (void)setupTitleView
+{
+    //设置navigationBar的titleView
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     self.navigationController.navigationBar.translucent = YES;
 }
@@ -60,6 +69,9 @@ extern CGFloat NavigationBarHeightIncrease;
     
 }
 
+
+
+#pragma mark - UIScrollViewDelegate 代理方法
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat num = scrollView.contentOffset.y + kNavBarAndStatusBarHeight + NavigationBarHeightIncrease;

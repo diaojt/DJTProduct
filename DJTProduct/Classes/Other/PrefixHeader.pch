@@ -15,6 +15,11 @@
 #define DJTLog(...)
 #endif
 
+
+
+#define appDelegate  ((AppDelegate*)[UIApplication sharedApplication].delegate)
+
+
 /**
  颜色
  */

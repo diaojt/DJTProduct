@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-extern CGFloat const NavigationBarHeightIncrease;
+
 @interface DJTNavBar : UINavigationBar
 
 @end
