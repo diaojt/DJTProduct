@@ -71,8 +71,35 @@
  @warning Managers for background sessions must be owned for the duration of their use. This can be accomplished by creating an application-wide or shared singleton instance.
  */
 
+
+
+/**
+ 头文件明确声明Nonull和Nullable
+ 
+ 自从支持Swift后，和Swift中的?和!对应，OC引入了Nonull和Nullable关键字，当然对每个方法参数和属性声明关键字是很大工作量的，这时我们可以用一对系统宏包含在最前和最后，中间的默认关键字就是Nonull了，这时候针对Nullable的参数或属性进行补充就可以了
+ */
 NS_ASSUME_NONNULL_BEGIN
 
+
+/**
+ ⚠️ 相关协议
+    NSCoding：存与取，把模型对象转变成一个文件，然后把这个文件重新加载到内存里，并不需要任何文件解析和序列化的逻辑。
+    实现协议方法：
+        - (void)encodeWithCoder:(NSCoder *)aCoder
+        - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
+    参考：https://www.jianshu.com/p/c5475f30bb4e
+ 
+    NSSecureCoding：NSSecureCoding是NSCoding的变种，因为NSCoding毕竟不太安全，大部分支持NSCoding的系统对象都已经升级到支持NSSecureCoding。
+    实现协议方法：
+    在原来encodeWithCoder和initWithCoder的基础上增加supportsSecureCoding,
+        + (BOOL)supportsSecureCoding
+ 
+    NSCopying:NSCopying是一个与对象拷贝有关的协议。如果想让一个类的对象支持拷贝，就需要让该类实现NSCopying协议.
+    实现协议方法：
+        - (id)copyWithZone:(NSZone *)zone
+    AFN里对session的configuration进行了拷贝；
+ 
+ */
 @interface AFHTTPSessionManager : AFURLSessionManager <NSSecureCoding, NSCopying>
 
 /**

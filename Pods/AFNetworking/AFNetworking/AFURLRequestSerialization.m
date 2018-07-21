@@ -250,6 +250,14 @@ static void *AFHTTPRequestSerializerObserverContext = &AFHTTPRequestSerializerOb
     return self;
 }
 
+/**
+ KVO用Context区分父类与子类
+ KVO中的Api
+ - (void)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context
+ 总是在dealloc方法中配合
+ - (void)removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath context:(nullable void *)context
+ 成对使用来移除观察者。但如果父类和子类都同时观察一个keyPath，那么容易导致addObserver和removeObserver的个数不匹配（子类未调用父类的addObserver方法但调用了父类的dealloc），导致重复调用remove同一个keyPath而Crash。所以加上context作为类别唯一标识才是比较安全的做法
+ */
 - (void)dealloc {
     for (NSString *keyPath in AFHTTPRequestSerializerObservedKeyPaths()) {
         if ([self respondsToSelector:NSSelectorFromString(keyPath)]) {
@@ -309,6 +317,10 @@ static void *AFHTTPRequestSerializerObserverContext = &AFHTTPRequestSerializerOb
     return value;
 }
 
+/**
+ 用GCD实现同步属性
+ 实现某个属性值setter方法和getter方法的同步除了用NSLock或者@synchronized关键字加锁外，可以使用在并发队列里setter配合dispatch_barrier_async加上getter配合dispatch_sync实现。这样读取是同步并发的，写入是在没有读取或读取都完成后，同步执行的，并且性能比加锁更好。
+ */
 - (void)setValue:(NSString *)value
 forHTTPHeaderField:(NSString *)field
 {

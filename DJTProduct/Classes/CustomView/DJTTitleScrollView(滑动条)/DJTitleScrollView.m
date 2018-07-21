@@ -133,7 +133,7 @@ CGFloat const DJTLeftMargin = 15;
 #pragma mark - Progress属性设置
 - (void)setUpProgressAttribute:(void(^)(CGFloat *progressLength, CGFloat *progressHeight))settingProgressBlock
 {
-    //如果影藏Progress指示器则返回
+    //如果隐藏Progress指示器则返回
     if (_isShowPregressView == NO) return;
     //指示器属性设置Block
     !settingProgressBlock ? : settingProgressBlock(&_progressLength,&_progressHeight);

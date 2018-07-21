@@ -44,8 +44,12 @@
 @property (readwrite, nonatomic, strong) NSURL *baseURL;
 @end
 
+
+
+
 @implementation AFHTTPSessionManager
 @dynamic responseSerializer;
+
 
 + (instancetype)manager {
     return [[[self class] alloc] initWithBaseURL:nil];
@@ -98,9 +102,15 @@
     [super setResponseSerializer:responseSerializer];
 }
 
+/**
+ @dynamic 关键字实现默认调用父类setter&getter
+ 当子类重新声明一个父类的属性时，其实默认合成了setter&getter并覆盖了父类的默认实现。对于想子类声明属性却希望默认调用父类属性的setter&getter，可以用@dynamic关键字，AFHTTPSessionManger是AFURLSessionManger的子类，也声明了securityPolicy属性并重写其setter方法，但希望getter方法调用父类的
+ */
 @dynamic securityPolicy;
 
+//声明了securityPolicy属性并重写其setter方法，https安全策略验证
 - (void)setSecurityPolicy:(AFSecurityPolicy *)securityPolicy {
+    //设置了安全策略类型，但不是https会提醒
     if (securityPolicy.SSLPinningMode != AFSSLPinningModeNone && ![self.baseURL.scheme isEqualToString:@"https"]) {
         NSString *pinningMode = @"Unknown Pinning Mode";
         switch (securityPolicy.SSLPinningMode) {
@@ -111,7 +121,7 @@
         NSString *reason = [NSString stringWithFormat:@"A security policy configured with `%@` can only be applied on a manager with a secure base URL (i.e. https)", pinningMode];
         @throw [NSException exceptionWithName:@"Invalid Security Policy" reason:reason userInfo:nil];
     }
-
+    //是https或者AFSSLPinningModeNone，调用父类
     [super setSecurityPolicy:securityPolicy];
 }
 
@@ -264,6 +274,7 @@
     return dataTask;
 }
 
+//GET、POST、DELETE、PATCH、PUT
 - (NSURLSessionDataTask *)dataTaskWithHTTPMethod:(NSString *)method
                                        URLString:(NSString *)URLString
                                       parameters:(id)parameters

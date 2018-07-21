@@ -37,6 +37,11 @@
 
 @implementation UIRefreshControl (AFNetworking)
 
+
+/**
+ 实现属性懒加载
+ 使用了OC的关联对象，先获取判断是否为空，不然就生成并关联上
+ */
 - (AFRefreshControlNotificationObserver *)af_notificationObserver {
     AFRefreshControlNotificationObserver *notificationObserver = objc_getAssociatedObject(self, @selector(af_notificationObserver));
     if (notificationObserver == nil) {

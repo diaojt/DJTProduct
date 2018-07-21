@@ -353,12 +353,12 @@
 			isa = PBXGroup;
 			children = (
 				71F8971DF17AE69F914598CD14F65079 /* AFNetworking.h */,
-				A6593D176514623C79F0FAF63F57453A /* NSURLSession */,
-				C259C4FE6832D833A9F237EE34682713 /* Reachability */,
-				E617B48FEC85143A718C5F6E49A77D21 /* Security */,
-				A331CC34279E3ACB1B1043B176094A53 /* Serialization */,
+				A6593D176514623C79F0FAF63F57453A /* NSURLSession(网络通信模块) */,
+				C259C4FE6832D833A9F237EE34682713 /* Reachability(网络状态监听模块) */,
+				E617B48FEC85143A718C5F6E49A77D21 /* Security(网络通信安全策略模块) */,
+				A331CC34279E3ACB1B1043B176094A53 /* Serialization(网络通信信息序列化/反序列化模块) */,
 				6F435A7D5DCD1CD6369D1A904F3D01DF /* Support Files */,
-				49BD4EE7E7F39055AA9CD3EE096D3AF9 /* UIKit */,
+				49BD4EE7E7F39055AA9CD3EE096D3AF9 /* UIKit(UIKit库的扩展) */,
 			);
 			path = AFNetworking;
 			sourceTree = "<group>";
@@ -389,7 +389,7 @@
 			path = "Target Support Files/Pods-DJTProduct";
 			sourceTree = "<group>";
 		};
-		49BD4EE7E7F39055AA9CD3EE096D3AF9 /* UIKit */ = {
+		49BD4EE7E7F39055AA9CD3EE096D3AF9 /* UIKit(UIKit库的扩展) */ = {
 			isa = PBXGroup;
 			children = (
 				B8C8EEE6219527F5366D38B9F9F1EF18 /* AFAutoPurgingImageCache.h */,
@@ -413,7 +413,7 @@
 				FEE405AA395907DB2DF12E69666A0DCB /* UIWebView+AFNetworking.h */,
 				8E2DF871B37FC165606C0B6F1E9A109B /* UIWebView+AFNetworking.m */,
 			);
-			name = UIKit;
+			name = "UIKit(UIKit库的扩展)";
 			sourceTree = "<group>";
 		};
 		4DA837D0C4C129A53A852F8BDE37A658 /* Core */ = {
@@ -560,7 +560,7 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		A331CC34279E3ACB1B1043B176094A53 /* Serialization */ = {
+		A331CC34279E3ACB1B1043B176094A53 /* Serialization(网络通信信息序列化/反序列化模块) */ = {
 			isa = PBXGroup;
 			children = (
 				B54E09B65EFE114A2A2A1CF6235BAA28 /* AFURLRequestSerialization.h */,
@@ -568,10 +568,10 @@
 				0258B297120D372CEF8A213FB3C314F3 /* AFURLResponseSerialization.h */,
 				42827AE7F9E621CF2614F0892D33AF71 /* AFURLResponseSerialization.m */,
 			);
-			name = Serialization;
+			name = "Serialization(网络通信信息序列化/反序列化模块)";
 			sourceTree = "<group>";
 		};
-		A6593D176514623C79F0FAF63F57453A /* NSURLSession */ = {
+		A6593D176514623C79F0FAF63F57453A /* NSURLSession(网络通信模块) */ = {
 			isa = PBXGroup;
 			children = (
 				55B1F1BC09568E95088EA42A528353C8 /* AFCompatibilityMacros.h */,
@@ -580,25 +580,25 @@
 				C5CD9E167ECA184A81874630F4EFDC0D /* AFURLSessionManager.h */,
 				E6FD1B573A041C73CA08A64D0DBB6E5D /* AFURLSessionManager.m */,
 			);
-			name = NSURLSession;
+			name = "NSURLSession(网络通信模块)";
 			sourceTree = "<group>";
 		};
-		C259C4FE6832D833A9F237EE34682713 /* Reachability */ = {
+		C259C4FE6832D833A9F237EE34682713 /* Reachability(网络状态监听模块) */ = {
 			isa = PBXGroup;
 			children = (
 				003476283810DB7343E9AE313439B90A /* AFNetworkReachabilityManager.h */,
 				B4BC8CF9A9B88D78300E6FA2BBEE9CA2 /* AFNetworkReachabilityManager.m */,
 			);
-			name = Reachability;
+			name = "Reachability(网络状态监听模块)";
 			sourceTree = "<group>";
 		};
-		E617B48FEC85143A718C5F6E49A77D21 /* Security */ = {
+		E617B48FEC85143A718C5F6E49A77D21 /* Security(网络通信安全策略模块) */ = {
 			isa = PBXGroup;
 			children = (
 				70406F0FD84047FE7B260D1827F85D8C /* AFSecurityPolicy.h */,
 				A8B795B93EA9D78D49E2ABB643E58696 /* AFSecurityPolicy.m */,
 			);
-			name = Security;
+			name = "Security(网络通信安全策略模块)";
 			sourceTree = "<group>";
 		};
 		F3F62E34C1B71E69E1B90AC008A065CD /* iOS */ = {

@@ -8,6 +8,7 @@
 
 #import "DJTViewFeatureViewController.h"
 #import "DJTViewFeatureNavBar.h"
+#import "DJTitleScrollView.h"
 
 /**
  navBar向上滑动的距离，非iphoneX时为44+20，iphoneX时是44+10，因为刘海底部到navbar顶部有点缝隙，iphoneX的statusBar高度为44，但底部在刘海底部下边一点，并不是对齐刘海底部
