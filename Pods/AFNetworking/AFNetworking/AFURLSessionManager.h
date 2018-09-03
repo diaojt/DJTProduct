@@ -91,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AFURLSessionManager : NSObject <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDownloadDelegate, NSSecureCoding, NSCopying>
 
 
-// 相对于 NSURLSession，NSURLSession强大的功能是支持后台上传和下载；同时值得注意的是，这个对象和它的delegate之间是一个强引用的关系，因此在释放NSURLSession时要做好处理
+// 相对于 NSURLConnection，NSURLSession强大的功能是支持后台上传和下载；同时值得注意的是，这个对象和它的delegate之间是一个强引用的关系，因此在释放NSURLSession时要做好处理
 @property (readonly, nonatomic, strong) NSURLSession *session;
 
 

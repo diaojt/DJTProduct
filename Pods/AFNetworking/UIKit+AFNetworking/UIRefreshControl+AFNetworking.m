@@ -28,15 +28,16 @@
 #import "AFURLSessionManager.h"
 
 @interface AFRefreshControlNotificationObserver : NSObject
-@property (readonly, nonatomic, weak) UIRefreshControl *refreshControl;
-- (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl;
 
+@property (readonly, nonatomic, weak) UIRefreshControl *refreshControl;
+
+- (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl;
 - (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task;
 
 @end
 
-@implementation UIRefreshControl (AFNetworking)
 
+@implementation UIRefreshControl (AFNetworking)
 
 /**
  实现属性懒加载

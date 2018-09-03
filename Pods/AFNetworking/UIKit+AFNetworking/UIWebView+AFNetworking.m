@@ -86,22 +86,25 @@
             success:(NSString * (^)(NSHTTPURLResponse *response, NSString *HTML))success
             failure:(void (^)(NSError *error))failure
 {
-    [self loadRequest:request MIMEType:nil textEncodingName:nil progress:progress success:^NSData *(NSHTTPURLResponse *response, NSData *data) {
-        NSStringEncoding stringEncoding = NSUTF8StringEncoding;
-        if (response.textEncodingName) {
-            CFStringEncoding encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)response.textEncodingName);
-            if (encoding != kCFStringEncodingInvalidId) {
-                stringEncoding = CFStringConvertEncodingToNSStringEncoding(encoding);
-            }
-        }
-
-        NSString *string = [[NSString alloc] initWithData:data encoding:stringEncoding];
-        if (success) {
-            string = success(response, string);
-        }
-
-        return [string dataUsingEncoding:stringEncoding];
-    } failure:failure];
+    [self loadRequest:request
+             MIMEType:nil
+     textEncodingName:nil
+             progress:progress
+              success:^NSData *(NSHTTPURLResponse *response, NSData *data) {
+                  NSStringEncoding stringEncoding = NSUTF8StringEncoding;
+                  if (response.textEncodingName) {
+                      CFStringEncoding encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)response.textEncodingName);
+                      if (encoding != kCFStringEncodingInvalidId) {
+                          stringEncoding = CFStringConvertEncodingToNSStringEncoding(encoding);
+                      }
+                  }
+                  NSString *string = [[NSString alloc] initWithData:data encoding:stringEncoding];
+                  if (success) {
+                      string = success(response, string);
+                  }
+                  return [string dataUsingEncoding:stringEncoding];
+              }
+              failure:failure];
 }
 
 - (void)loadRequest:(NSURLRequest *)request

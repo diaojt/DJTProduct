@@ -243,7 +243,7 @@ didCompleteWithError:(NSError *)error
 
     __block id responseObject = nil;
 
-    // 实用字典来存放请求的结果
+    // 使用字典来存放请求的结果
     __block NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
     userInfo[AFNetworkingTaskDidCompleteResponseSerializerKey] = manager.responseSerializer;
 
@@ -808,7 +808,7 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
 // 还记得上边提到的_AFURLSessionTaskSwizzling这个私有类吗？它交换了resume and  suspend这两个方法，在方法中发了下边两个通知：
 // * AFNSURLSessionTaskDidResumeNotification
 // * AFNSURLSessionTaskDidSuspendNotification
-// 接下来就是一个很巧妙的转化过程了，按理说我们只需要接受并处理上边的两个通知不就可以了吗？ 但真实情况却不是这样的，<font color=orange>并不是所有人使用网络请求都是用AFNetworking</font>，所以使用if ([task.taskDescription isEqualToString:self.taskDescriptionForSessionTasks])来做判断，这个task是否来自AFNetworking。
+// 接下来就是一个很巧妙的转化过程了，按理说我们只需要接受并处理上边的两个通知不就可以了吗？ 但真实情况却不是这样的，并不是所有人使用网络请求都是用AFNetworking，所以使用if ([task.taskDescription isEqualToString:self.taskDescriptionForSessionTasks])来做判断，这个task是否来自AFNetworking。
 
 // 转化后我们就是用下边的通知，同时也是对外暴露出来的通知：
 
@@ -1110,7 +1110,7 @@ didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
 
 #pragma mark - NSURLSessionTaskDelegate
 
-// 请求改变的时候调用
+// 请求改变的时候调用，重定向
 - (void)URLSession:(NSURLSession *)session
               task:(NSURLSessionTask *)task
 willPerformHTTPRedirection:(NSHTTPURLResponse *)response
@@ -1128,7 +1128,7 @@ willPerformHTTPRedirection:(NSHTTPURLResponse *)response
     }
 }
 
-// 使用方法同 URLSession: didReceiveChallenge: completionHandler: 差不多
+// task层次收到了授权，服务器请求身份验证或TLS握手期间需要提供证书的话，NSURLSession 会调用
 - (void)URLSession:(NSURLSession *)session
               task:(NSURLSessionTask *)task
 didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
@@ -1202,7 +1202,7 @@ totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend
     }
 }
 
-// 完成时调用
+// 任务完成时调用
 - (void)URLSession:(NSURLSession *)session
               task:(NSURLSessionTask *)task
 didCompleteWithError:(NSError *)error
@@ -1223,7 +1223,7 @@ didCompleteWithError:(NSError *)error
 
 #pragma mark - NSURLSessionDataDelegate
 
-// 收到响应时调用
+// 获取服务器返回的响应信息，收到响应时调用
 - (void)URLSession:(NSURLSession *)session
           dataTask:(NSURLSessionDataTask *)dataTask
 didReceiveResponse:(NSURLResponse *)response
@@ -1257,7 +1257,7 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     }
 }
 
-// 接受数据过程中，调用，只限于NSURLSessionDataTask
+// 一个数据包过来了，接受数据过程中调用，只限于NSURLSessionDataTask
 - (void)URLSession:(NSURLSession *)session
           dataTask:(NSURLSessionDataTask *)dataTask
     didReceiveData:(NSData *)data
@@ -1271,7 +1271,7 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     }
 }
 
-// 即将缓存响应时调用
+// 即将缓存响应时调用，session会调用URLSession:dataTask:willCacheResponse:completionHandler:询问你的app是否允许缓存，如果代理不实现这个方法的话，默认使用session绑定的configuration的缓存策略
 - (void)URLSession:(NSURLSession *)session
           dataTask:(NSURLSessionDataTask *)dataTask
  willCacheResponse:(NSCachedURLResponse *)proposedResponse
@@ -1279,6 +1279,8 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
 {
     NSCachedURLResponse *cachedResponse = proposedResponse;
 
+    // 自定义方法，你可以什么都不做，返回原始的 cachedResponse，或者使用修改后的cachedResponse
+    // 当然你也可以返回Null，这就意味着不需要缓存response
     if (self.dataTaskWillCacheResponse) {
         cachedResponse = self.dataTaskWillCacheResponse(session, dataTask, proposedResponse);
     }
@@ -1300,7 +1302,7 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
 #endif
 
 #pragma mark - NSURLSessionDownloadDelegate
-// 下载完成后调用
+// 如果download task 成功完成了，调用该方法把临时文件的url路径给你，此时你应该在该代理方法返回以前读取他的数据或者把文件持久化
 - (void)URLSession:(NSURLSession *)session
       downloadTask:(NSURLSessionDownloadTask *)downloadTask
 didFinishDownloadingToURL:(NSURL *)location
@@ -1324,7 +1326,7 @@ didFinishDownloadingToURL:(NSURL *)location
         [delegate URLSession:session downloadTask:downloadTask didFinishDownloadingToURL:location];
     }
 }
-// 下载中调用
+// 下载中调用，下载进度变化的时候被调用，服务器传输数据给客户端期间
 - (void)URLSession:(NSURLSession *)session
       downloadTask:(NSURLSessionDownloadTask *)downloadTask
       didWriteData:(int64_t)bytesWritten
@@ -1349,7 +1351,6 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
  didResumeAtOffset:(int64_t)fileOffset
 expectedTotalBytes:(int64_t)expectedTotalBytes
 {
-    
     AFURLSessionManagerTaskDelegate *delegate = [self delegateForTask:downloadTask];
     
     if (delegate) {

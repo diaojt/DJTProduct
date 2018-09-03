@@ -71,7 +71,7 @@
 #import <Masonry.h>
 
 
-
+#import <AFNetworking.h>
 
 /**
  弱引用
