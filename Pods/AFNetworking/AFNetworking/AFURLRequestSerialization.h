@@ -44,9 +44,6 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return The percent-escaped string.
  */
-
-// 全局方法：
-// AFPercentEscapedStringFromString返回一个字符串的百分号编码格式的字符串。因为url只有普通英文字符和数字，特殊字符$-_.+!*'()还有保留字符。所以很多字符都需要编码,非ASCII编码的字符串先转换为ASCII编码，然后再转换为百分号编码
 FOUNDATION_EXPORT NSString * AFPercentEscapedStringFromString(NSString *string);
 
 /**

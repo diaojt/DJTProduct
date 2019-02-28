@@ -28,21 +28,15 @@
 #import "AFURLSessionManager.h"
 
 @interface AFRefreshControlNotificationObserver : NSObject
-
 @property (readonly, nonatomic, weak) UIRefreshControl *refreshControl;
-
 - (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl;
+
 - (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task;
 
 @end
 
-
 @implementation UIRefreshControl (AFNetworking)
 
-/**
- 实现属性懒加载
- 使用了OC的关联对象，先获取判断是否为空，不然就生成并关联上
- */
 - (AFRefreshControlNotificationObserver *)af_notificationObserver {
     AFRefreshControlNotificationObserver *notificationObserver = objc_getAssociatedObject(self, @selector(af_notificationObserver));
     if (notificationObserver == nil) {
@@ -77,16 +71,19 @@
     [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
 
     if (task) {
-        UIRefreshControl *refreshControl = self.refreshControl;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wreceiver-is-weak"
+#pragma clang diagnostic ignored "-Warc-repeated-use-of-weak"
         if (task.state == NSURLSessionTaskStateRunning) {
-            [refreshControl beginRefreshing];
+            [self.refreshControl beginRefreshing];
 
             [notificationCenter addObserver:self selector:@selector(af_beginRefreshing) name:AFNetworkingTaskDidResumeNotification object:task];
             [notificationCenter addObserver:self selector:@selector(af_endRefreshing) name:AFNetworkingTaskDidCompleteNotification object:task];
             [notificationCenter addObserver:self selector:@selector(af_endRefreshing) name:AFNetworkingTaskDidSuspendNotification object:task];
         } else {
-            [refreshControl endRefreshing];
+            [self.refreshControl endRefreshing];
         }
+#pragma clang diagnostic pop
     }
 }
 
@@ -94,13 +91,19 @@
 
 - (void)af_beginRefreshing {
     dispatch_async(dispatch_get_main_queue(), ^{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wreceiver-is-weak"
         [self.refreshControl beginRefreshing];
+#pragma clang diagnostic pop
     });
 }
 
 - (void)af_endRefreshing {
     dispatch_async(dispatch_get_main_queue(), ^{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wreceiver-is-weak"
         [self.refreshControl endRefreshing];
+#pragma clang diagnostic pop
     });
 }
 

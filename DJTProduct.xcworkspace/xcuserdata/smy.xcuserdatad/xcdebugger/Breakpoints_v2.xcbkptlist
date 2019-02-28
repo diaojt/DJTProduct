@@ -2,4 +2,85 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DJTProduct/Classes/Features/PracticalFeature(&#x5b9e;&#x7528;)/View/PhotoView/YYPhotoGroupView.m"
+            timestampString = "570349219.196316"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "793"
+            endingLineNumber = "793"
+            landmarkName = "-pan:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DJTProduct/Classes/Features/PracticalFeature(&#x5b9e;&#x7528;)/View/PhotoView/YYPhotoGroupView.m"
+            timestampString = "570349219.196373"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "871"
+            endingLineNumber = "871"
+            landmarkName = "-pan:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[YYPhotoGroupView pan:]"
+                  moduleName = "DJTProduct"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/smy/Documents/iOS_Demo/MyGitHub/DJTProduct/DJTProduct/Classes/Features/PracticalFeature(%E5%AE%9E%E7%94%A8)/View/PhotoView/YYPhotoGroupView.m"
+                  timestampString = "572337534.585845"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "871"
+                  endingLineNumber = "871"
+                  offsetFromSymbolStart = "2904">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__24-[YYPhotoGroupView pan:]_block_invoke.666"
+                  moduleName = "DJTProduct"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/smy/Documents/iOS_Demo/MyGitHub/DJTProduct/DJTProduct/Classes/Features/PracticalFeature(%E5%AE%9E%E7%94%A8)/View/PhotoView/YYPhotoGroupView.m"
+                  timestampString = "572337534.587454"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "872"
+                  endingLineNumber = "872"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.668"
+                  moduleName = "DJTProduct"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/smy/Documents/iOS_Demo/MyGitHub/DJTProduct/DJTProduct/Classes/Features/PracticalFeature(%E5%AE%9E%E7%94%A8)/View/PhotoView/YYPhotoGroupView.m"
+                  timestampString = "572337534.589015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "871"
+                  endingLineNumber = "871"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

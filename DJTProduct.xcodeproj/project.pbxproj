@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E0FC9FF838F644E0FB679E30 /* libPods-DJTProduct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BD9602FF4524E7D8CF6E53 /* libPods-DJTProduct.a */; };
+		F305E43021B92CAE000F29F4 /* DJTRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F305E42F21B92CAE000F29F4 /* DJTRefreshHeader.m */; };
+		F305E43321B92CE7000F29F4 /* DJTRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F305E43221B92CE7000F29F4 /* DJTRefreshFooter.m */; };
+		F31FE8BA21F840BC00205D7C /* DJTBrowserImg.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F31FE8B921F840BC00205D7C /* DJTBrowserImg.bundle */; };
+		F31FE8BD21F8410400205D7C /* DJTBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8BC21F8410400205D7C /* DJTBrowserView.m */; };
+		F31FE8C021F8415C00205D7C /* DJTBrowserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8BF21F8415C00205D7C /* DJTBrowserConfig.m */; };
+		F31FE8C621F9921100205D7C /* DJTPhotoListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C521F9921100205D7C /* DJTPhotoListModel.m */; };
+		F31FE8C921F9997100205D7C /* DJTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C821F9997100205D7C /* DJTProgressView.m */; };
+		F31FE8CC21F9C52400205D7C /* DJTPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8CB21F9C52400205D7C /* DJTPhotoBrowserView.m */; };
+		F3377C9321D5DAD90084E28F /* DJTRefreshView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3377C9221D5DAD90084E28F /* DJTRefreshView.xcassets */; };
 		F33D420120EF53FD0071AFD0 /* DJTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420020EF53FD0071AFD0 /* DJTMainViewController.m */; };
 		F33D420420EF54AC0071AFD0 /* DJTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420320EF54AC0071AFD0 /* DJTNavigationViewController.m */; };
 		F33D420A20EF62B60071AFD0 /* DJTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F33D420920EF62B60071AFD0 /* DJTTabBar.m */; };
 		F347AD6720F8A22C0024712A /* DJTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F347AD6620F8A22C0024712A /* DJTitleScrollView.m */; };
 		F347AD6D20F8A8090024712A /* DJTPagerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F347AD6C20F8A8090024712A /* DJTPagerProgressView.m */; };
+		F35A52BD21F599C1000945AC /* DJTStatusHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F35A52BC21F599C1000945AC /* DJTStatusHelper.m */; };
+		F35A543C21F5ADC4000945AC /* EmoticonCaipiao.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F35A543B21F5ADC4000945AC /* EmoticonCaipiao.bundle */; };
 		F3757F5C20F7042B00A622A1 /* DJTViewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F5B20F7042B00A622A1 /* DJTViewFeatureViewController.m */; };
 		F3757F5F20F705E800A622A1 /* DJTNetFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F5E20F705E800A622A1 /* DJTNetFeatureViewController.m */; };
 		F3757F6520F7062C00A622A1 /* DJTPracticalFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6420F7062C00A622A1 /* DJTPracticalFeatureViewController.m */; };
@@ -20,14 +31,47 @@
 		F3757F6C20F70C9E00A622A1 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6B20F70C9E00A622A1 /* UIView+Custom.m */; };
 		F3757F6F20F7377200A622A1 /* DJTNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F6E20F7377200A622A1 /* DJTNavBar.m */; };
 		F3757F7220F875FC00A622A1 /* DJTViewFeatureNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F3757F7120F875FC00A622A1 /* DJTViewFeatureNavBar.m */; };
+		F388385C2192B9F7009EC9E5 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F388385B2192B9F7009EC9E5 /* testViewController.m */; };
+		F38838602192BBA6009EC9E5 /* DJTCommunityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F388385F2192BBA6009EC9E5 /* DJTCommunityCell.m */; };
+		F38838632192BCB8009EC9E5 /* DJTCommunityCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F38838622192BCB8009EC9E5 /* DJTCommunityCellLayout.m */; };
+		F38838662192BE43009EC9E5 /* DJTCommunityStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F38838652192BE43009EC9E5 /* DJTCommunityStatus.m */; };
+		F388386A2193069F009EC9E5 /* DJTBaseVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F38838692193069F009EC9E5 /* DJTBaseVM.m */; };
+		F388386F21930DC5009EC9E5 /* DJTCommunityVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F388386E21930DC5009EC9E5 /* DJTCommunityVM.m */; };
+		F38838782195271A009EC9E5 /* PracticalFeature.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38838772195271A009EC9E5 /* PracticalFeature.xcassets */; };
+		F3883880219807E8009EC9E5 /* PhotoView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F388387B219807E8009EC9E5 /* PhotoView.xcassets */; };
+		F388388A2198318A009EC9E5 /* DJT_Recommend_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = F38838892198318A009EC9E5 /* DJT_Recommend_Model.m */; };
+		F38D991221B7AA4600550360 /* DJT_Hot_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = F38D991121B7AA4600550360 /* DJT_Hot_Model.m */; };
 		F3923B3E20EF4FB70078A2A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3923B3D20EF4FB70078A2A3 /* AppDelegate.m */; };
 		F3923B4620EF4FB80078A2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3923B4520EF4FB80078A2A3 /* Assets.xcassets */; };
 		F3923B4C20EF4FB80078A2A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3923B4B20EF4FB80078A2A3 /* main.m */; };
+		F3A2201B21BE13B900AB657D /* YYControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A2201A21BE13B900AB657D /* YYControl.m */; };
+		F3C9B13221DCB06F0036E9C3 /* 大雨@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C9B13021DCB06F0036E9C3 /* 大雨@3x.png */; };
+		F3C9B13321DCB06F0036E9C3 /* 大雨@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C9B13121DCB06F0036E9C3 /* 大雨@2x.png */; };
+		F3C9B13621DCB0910036E9C3 /* UIViewController+Present.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C9B13521DCB0910036E9C3 /* UIViewController+Present.m */; };
+		F3D60A2A21C0F3BD00A1572C /* UIViewController+HandleStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D60A2921C0F3BD00A1572C /* UIViewController+HandleStatusBar.m */; };
+		F3EC2C6C21BFA5A500C90317 /* YYPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EC2C6B21BFA5A500C90317 /* YYPhotoGroupView.m */; };
+		F3EE09C821FEAEB20006765B /* DJTPhotoBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EE09C721FEAEB20006765B /* DJTPhotoBrowserCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F3884A0CB408D44819AD9E0 /* Pods-DJTProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJTProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJTProduct/Pods-DJTProduct.release.xcconfig"; sourceTree = "<group>"; };
 		B2BD9602FF4524E7D8CF6E53 /* libPods-DJTProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DJTProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F305E42E21B92CAE000F29F4 /* DJTRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTRefreshHeader.h; sourceTree = "<group>"; };
+		F305E42F21B92CAE000F29F4 /* DJTRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTRefreshHeader.m; sourceTree = "<group>"; };
+		F305E43121B92CE7000F29F4 /* DJTRefreshFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTRefreshFooter.h; sourceTree = "<group>"; };
+		F305E43221B92CE7000F29F4 /* DJTRefreshFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTRefreshFooter.m; sourceTree = "<group>"; };
+		F31FE8B921F840BC00205D7C /* DJTBrowserImg.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DJTBrowserImg.bundle; sourceTree = "<group>"; };
+		F31FE8BB21F8410400205D7C /* DJTBrowserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTBrowserView.h; sourceTree = "<group>"; };
+		F31FE8BC21F8410400205D7C /* DJTBrowserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTBrowserView.m; sourceTree = "<group>"; };
+		F31FE8BE21F8415C00205D7C /* DJTBrowserConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTBrowserConfig.h; sourceTree = "<group>"; };
+		F31FE8BF21F8415C00205D7C /* DJTBrowserConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTBrowserConfig.m; sourceTree = "<group>"; };
+		F31FE8C421F9921100205D7C /* DJTPhotoListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTPhotoListModel.h; sourceTree = "<group>"; };
+		F31FE8C521F9921100205D7C /* DJTPhotoListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTPhotoListModel.m; sourceTree = "<group>"; };
+		F31FE8C721F9997100205D7C /* DJTProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTProgressView.h; sourceTree = "<group>"; };
+		F31FE8C821F9997100205D7C /* DJTProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTProgressView.m; sourceTree = "<group>"; };
+		F31FE8CA21F9C52400205D7C /* DJTPhotoBrowserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTPhotoBrowserView.h; sourceTree = "<group>"; };
+		F31FE8CB21F9C52400205D7C /* DJTPhotoBrowserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTPhotoBrowserView.m; sourceTree = "<group>"; };
+		F3377C9221D5DAD90084E28F /* DJTRefreshView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DJTRefreshView.xcassets; sourceTree = "<group>"; };
 		F33D41FF20EF53FD0071AFD0 /* DJTMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTMainViewController.h; sourceTree = "<group>"; };
 		F33D420020EF53FD0071AFD0 /* DJTMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTMainViewController.m; sourceTree = "<group>"; };
 		F33D420220EF54AC0071AFD0 /* DJTNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTNavigationViewController.h; sourceTree = "<group>"; };
@@ -38,6 +82,9 @@
 		F347AD6620F8A22C0024712A /* DJTitleScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTitleScrollView.m; sourceTree = "<group>"; };
 		F347AD6B20F8A8090024712A /* DJTPagerProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTPagerProgressView.h; sourceTree = "<group>"; };
 		F347AD6C20F8A8090024712A /* DJTPagerProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTPagerProgressView.m; sourceTree = "<group>"; };
+		F35A52BB21F599C1000945AC /* DJTStatusHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTStatusHelper.h; sourceTree = "<group>"; };
+		F35A52BC21F599C1000945AC /* DJTStatusHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTStatusHelper.m; sourceTree = "<group>"; };
+		F35A543B21F5ADC4000945AC /* EmoticonCaipiao.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonCaipiao.bundle; sourceTree = "<group>"; };
 		F3757F5A20F7042B00A622A1 /* DJTViewFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTViewFeatureViewController.h; sourceTree = "<group>"; };
 		F3757F5B20F7042B00A622A1 /* DJTViewFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTViewFeatureViewController.m; sourceTree = "<group>"; };
 		F3757F5D20F705E800A622A1 /* DJTNetFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTNetFeatureViewController.h; sourceTree = "<group>"; };
@@ -52,6 +99,24 @@
 		F3757F6E20F7377200A622A1 /* DJTNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTNavBar.m; sourceTree = "<group>"; };
 		F3757F7020F875FC00A622A1 /* DJTViewFeatureNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTViewFeatureNavBar.h; sourceTree = "<group>"; };
 		F3757F7120F875FC00A622A1 /* DJTViewFeatureNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTViewFeatureNavBar.m; sourceTree = "<group>"; };
+		F388385A2192B9F7009EC9E5 /* testViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		F388385B2192B9F7009EC9E5 /* testViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		F388385E2192BBA6009EC9E5 /* DJTCommunityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTCommunityCell.h; sourceTree = "<group>"; };
+		F388385F2192BBA6009EC9E5 /* DJTCommunityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTCommunityCell.m; sourceTree = "<group>"; };
+		F38838612192BCB8009EC9E5 /* DJTCommunityCellLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTCommunityCellLayout.h; sourceTree = "<group>"; };
+		F38838622192BCB8009EC9E5 /* DJTCommunityCellLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTCommunityCellLayout.m; sourceTree = "<group>"; };
+		F38838642192BE43009EC9E5 /* DJTCommunityStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTCommunityStatus.h; sourceTree = "<group>"; };
+		F38838652192BE43009EC9E5 /* DJTCommunityStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTCommunityStatus.m; sourceTree = "<group>"; };
+		F38838682193069F009EC9E5 /* DJTBaseVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTBaseVM.h; sourceTree = "<group>"; };
+		F38838692193069F009EC9E5 /* DJTBaseVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTBaseVM.m; sourceTree = "<group>"; };
+		F388386D21930DC5009EC9E5 /* DJTCommunityVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTCommunityVM.h; sourceTree = "<group>"; };
+		F388386E21930DC5009EC9E5 /* DJTCommunityVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTCommunityVM.m; sourceTree = "<group>"; };
+		F38838772195271A009EC9E5 /* PracticalFeature.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PracticalFeature.xcassets; sourceTree = "<group>"; };
+		F388387B219807E8009EC9E5 /* PhotoView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PhotoView.xcassets; sourceTree = "<group>"; };
+		F38838882198318A009EC9E5 /* DJT_Recommend_Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_Recommend_Model.h; sourceTree = "<group>"; };
+		F38838892198318A009EC9E5 /* DJT_Recommend_Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_Recommend_Model.m; sourceTree = "<group>"; };
+		F38D991021B7AA4600550360 /* DJT_Hot_Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_Hot_Model.h; sourceTree = "<group>"; };
+		F38D991121B7AA4600550360 /* DJT_Hot_Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_Hot_Model.m; sourceTree = "<group>"; };
 		F3923B3920EF4FB70078A2A3 /* DJTProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJTProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3923B3C20EF4FB70078A2A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3923B3D20EF4FB70078A2A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,6 +124,18 @@
 		F3923B4A20EF4FB80078A2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3923B4B20EF4FB80078A2A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F39E708720F5E3C200879A46 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F3A2201921BE13B900AB657D /* YYControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYControl.h; sourceTree = "<group>"; };
+		F3A2201A21BE13B900AB657D /* YYControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYControl.m; sourceTree = "<group>"; };
+		F3C9B13021DCB06F0036E9C3 /* 大雨@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大雨@3x.png"; sourceTree = "<group>"; };
+		F3C9B13121DCB06F0036E9C3 /* 大雨@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大雨@2x.png"; sourceTree = "<group>"; };
+		F3C9B13421DCB0910036E9C3 /* UIViewController+Present.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Present.h"; sourceTree = "<group>"; };
+		F3C9B13521DCB0910036E9C3 /* UIViewController+Present.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Present.m"; sourceTree = "<group>"; };
+		F3D60A2821C0F3BD00A1572C /* UIViewController+HandleStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HandleStatusBar.h"; sourceTree = "<group>"; };
+		F3D60A2921C0F3BD00A1572C /* UIViewController+HandleStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HandleStatusBar.m"; sourceTree = "<group>"; };
+		F3EC2C6A21BFA5A500C90317 /* YYPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYPhotoGroupView.h; sourceTree = "<group>"; };
+		F3EC2C6B21BFA5A500C90317 /* YYPhotoGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYPhotoGroupView.m; sourceTree = "<group>"; };
+		F3EE09C621FEAEB20006765B /* DJTPhotoBrowserCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJTPhotoBrowserCollectionViewCell.h; sourceTree = "<group>"; };
+		F3EE09C721FEAEB20006765B /* DJTPhotoBrowserCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJTPhotoBrowserCollectionViewCell.m; sourceTree = "<group>"; };
 		F487F08124A99572F8D2CA9D /* Pods-DJTProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJTProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJTProduct/Pods-DJTProduct.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +168,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F31FE8B821F8403400205D7C /* DJTPhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				F31FE8B921F840BC00205D7C /* DJTBrowserImg.bundle */,
+				F31FE8BB21F8410400205D7C /* DJTBrowserView.h */,
+				F31FE8BC21F8410400205D7C /* DJTBrowserView.m */,
+				F31FE8BE21F8415C00205D7C /* DJTBrowserConfig.h */,
+				F31FE8BF21F8415C00205D7C /* DJTBrowserConfig.m */,
+				F31FE8C421F9921100205D7C /* DJTPhotoListModel.h */,
+				F31FE8C521F9921100205D7C /* DJTPhotoListModel.m */,
+				F31FE8C721F9997100205D7C /* DJTProgressView.h */,
+				F31FE8C821F9997100205D7C /* DJTProgressView.m */,
+				F31FE8CA21F9C52400205D7C /* DJTPhotoBrowserView.h */,
+				F31FE8CB21F9C52400205D7C /* DJTPhotoBrowserView.m */,
+				F3EE09C621FEAEB20006765B /* DJTPhotoBrowserCollectionViewCell.h */,
+				F3EE09C721FEAEB20006765B /* DJTPhotoBrowserCollectionViewCell.m */,
+			);
+			path = DJTPhotoView;
+			sourceTree = "<group>";
+		};
 		F33D41FD20EF51520071AFD0 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +200,10 @@
 			children = (
 				F3757F6A20F70C9E00A622A1 /* UIView+Custom.h */,
 				F3757F6B20F70C9E00A622A1 /* UIView+Custom.m */,
+				F3D60A2821C0F3BD00A1572C /* UIViewController+HandleStatusBar.h */,
+				F3D60A2921C0F3BD00A1572C /* UIViewController+HandleStatusBar.m */,
+				F3C9B13421DCB0910036E9C3 /* UIViewController+Present.h */,
+				F3C9B13521DCB0910036E9C3 /* UIViewController+Present.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -139,6 +240,7 @@
 		F347AD6320F8A1BD0024712A /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				F38D991921B9276D00550360 /* DJTRefreshView */,
 				F347AD6420F8A1CD0024712A /* DJTTitleScrollView(滑动条) */,
 			);
 			path = CustomView;
@@ -155,9 +257,18 @@
 			path = "DJTTitleScrollView(滑动条)";
 			sourceTree = "<group>";
 		};
+		F35A52BE21F59C81000945AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F35A543B21F5ADC4000945AC /* EmoticonCaipiao.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F3757F4520F701F500A622A1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F388386B219306A3009EC9E5 /* BaseObject */,
 				F3757F4920F702C900A622A1 /* PracticalFeature(实用) */,
 				F3757F4820F7028300A622A1 /* TripartiteFeature(三方) */,
 				F3757F4720F7027300A622A1 /* NetworkFeature(网络) */,
@@ -202,10 +313,12 @@
 		F3757F4920F702C900A622A1 /* PracticalFeature(实用) */ = {
 			isa = PBXGroup;
 			children = (
+				F38838672192FFD9009EC9E5 /* ViewModel */,
 				F3757F5920F703D400A622A1 /* Tool */,
 				F3757F5820F703CF00A622A1 /* View */,
 				F3757F5720F703C900A622A1 /* Controller */,
 				F3757F5620F703C400A622A1 /* Model */,
+				F38838772195271A009EC9E5 /* PracticalFeature.xcassets */,
 			);
 			path = "PracticalFeature(实用)";
 			sourceTree = "<group>";
@@ -305,6 +418,12 @@
 		F3757F5620F703C400A622A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F38838642192BE43009EC9E5 /* DJTCommunityStatus.h */,
+				F38838652192BE43009EC9E5 /* DJTCommunityStatus.m */,
+				F38838882198318A009EC9E5 /* DJT_Recommend_Model.h */,
+				F38838892198318A009EC9E5 /* DJT_Recommend_Model.m */,
+				F38D991021B7AA4600550360 /* DJT_Hot_Model.h */,
+				F38D991121B7AA4600550360 /* DJT_Hot_Model.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +433,8 @@
 			children = (
 				F3757F6320F7062C00A622A1 /* DJTPracticalFeatureViewController.h */,
 				F3757F6420F7062C00A622A1 /* DJTPracticalFeatureViewController.m */,
+				F388385A2192B9F7009EC9E5 /* testViewController.h */,
+				F388385B2192B9F7009EC9E5 /* testViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,6 +442,9 @@
 		F3757F5820F703CF00A622A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F31FE8B821F8403400205D7C /* DJTPhotoView */,
+				F388387A219807E8009EC9E5 /* PhotoView */,
+				F388385D2192BB4F009EC9E5 /* DJTCommunityCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,8 +452,79 @@
 		F3757F5920F703D400A622A1 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				F35A52BB21F599C1000945AC /* DJTStatusHelper.h */,
+				F35A52BC21F599C1000945AC /* DJTStatusHelper.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		F388385D2192BB4F009EC9E5 /* DJTCommunityCell */ = {
+			isa = PBXGroup;
+			children = (
+				F38838832198092A009EC9E5 /* Vendor */,
+				F388385E2192BBA6009EC9E5 /* DJTCommunityCell.h */,
+				F388385F2192BBA6009EC9E5 /* DJTCommunityCell.m */,
+				F38838612192BCB8009EC9E5 /* DJTCommunityCellLayout.h */,
+				F38838622192BCB8009EC9E5 /* DJTCommunityCellLayout.m */,
+			);
+			path = DJTCommunityCell;
+			sourceTree = "<group>";
+		};
+		F38838672192FFD9009EC9E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F388386D21930DC5009EC9E5 /* DJTCommunityVM.h */,
+				F388386E21930DC5009EC9E5 /* DJTCommunityVM.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F388386B219306A3009EC9E5 /* BaseObject */ = {
+			isa = PBXGroup;
+			children = (
+				F388386C219306AD009EC9E5 /* BaseVM */,
+			);
+			path = BaseObject;
+			sourceTree = "<group>";
+		};
+		F388386C219306AD009EC9E5 /* BaseVM */ = {
+			isa = PBXGroup;
+			children = (
+				F38838682193069F009EC9E5 /* DJTBaseVM.h */,
+				F38838692193069F009EC9E5 /* DJTBaseVM.m */,
+			);
+			path = BaseVM;
+			sourceTree = "<group>";
+		};
+		F388387A219807E8009EC9E5 /* PhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				F3EC2C6A21BFA5A500C90317 /* YYPhotoGroupView.h */,
+				F3EC2C6B21BFA5A500C90317 /* YYPhotoGroupView.m */,
+				F3A2201921BE13B900AB657D /* YYControl.h */,
+				F3A2201A21BE13B900AB657D /* YYControl.m */,
+				F388387B219807E8009EC9E5 /* PhotoView.xcassets */,
+			);
+			path = PhotoView;
+			sourceTree = "<group>";
+		};
+		F38838832198092A009EC9E5 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		F38D991921B9276D00550360 /* DJTRefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				F305E42E21B92CAE000F29F4 /* DJTRefreshHeader.h */,
+				F305E42F21B92CAE000F29F4 /* DJTRefreshHeader.m */,
+				F305E43121B92CE7000F29F4 /* DJTRefreshFooter.h */,
+				F305E43221B92CE7000F29F4 /* DJTRefreshFooter.m */,
+				F3377C9221D5DAD90084E28F /* DJTRefreshView.xcassets */,
+			);
+			path = DJTRefreshView;
 			sourceTree = "<group>";
 		};
 		F3923B3020EF4FB70078A2A3 = {
@@ -383,6 +578,7 @@
 		F3923B5420EF4FD60078A2A3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F35A52BE21F59C81000945AC /* Resources */,
 				F347AD6320F8A1BD0024712A /* CustomView */,
 				F3757F4520F701F500A622A1 /* Features */,
 				F3923B5220EF4FBE0078A2A3 /* Main */,
@@ -396,10 +592,20 @@
 		F3923B5520EF4FED0078A2A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3C9B12F21DCB0490036E9C3 /* Icons */,
 				F3923B4520EF4FB80078A2A3 /* Assets.xcassets */,
 				F3923B4A20EF4FB80078A2A3 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3C9B12F21DCB0490036E9C3 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F3C9B13121DCB06F0036E9C3 /* 大雨@2x.png */,
+				F3C9B13021DCB06F0036E9C3 /* 大雨@3x.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +619,7 @@
 				F3923B3520EF4FB70078A2A3 /* Sources */,
 				F3923B3620EF4FB70078A2A3 /* Frameworks */,
 				F3923B3720EF4FB70078A2A3 /* Resources */,
+				3A1B5EF3CFE091790773A0D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -460,13 +667,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38838782195271A009EC9E5 /* PracticalFeature.xcassets in Resources */,
+				F3C9B13221DCB06F0036E9C3 /* 大雨@3x.png in Resources */,
 				F3923B4620EF4FB80078A2A3 /* Assets.xcassets in Resources */,
+				F3C9B13321DCB06F0036E9C3 /* 大雨@2x.png in Resources */,
+				F35A543C21F5ADC4000945AC /* EmoticonCaipiao.bundle in Resources */,
+				F3883880219807E8009EC9E5 /* PhotoView.xcassets in Resources */,
+				F3377C9321D5DAD90084E28F /* DJTRefreshView.xcassets in Resources */,
+				F31FE8BA21F840BC00205D7C /* DJTBrowserImg.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A1B5EF3CFE091790773A0D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DJTProduct/Pods-DJTProduct-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJTProduct/Pods-DJTProduct-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C5AD585563F3CE0294904DB9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,18 +726,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EC2C6C21BFA5A500C90317 /* YYPhotoGroupView.m in Sources */,
+				F38D991221B7AA4600550360 /* DJT_Hot_Model.m in Sources */,
+				F3D60A2A21C0F3BD00A1572C /* UIViewController+HandleStatusBar.m in Sources */,
 				F347AD6D20F8A8090024712A /* DJTPagerProgressView.m in Sources */,
 				F3757F5F20F705E800A622A1 /* DJTNetFeatureViewController.m in Sources */,
+				F31FE8C021F8415C00205D7C /* DJTBrowserConfig.m in Sources */,
+				F38838662192BE43009EC9E5 /* DJTCommunityStatus.m in Sources */,
+				F3C9B13621DCB0910036E9C3 /* UIViewController+Present.m in Sources */,
+				F388388A2198318A009EC9E5 /* DJT_Recommend_Model.m in Sources */,
+				F31FE8BD21F8410400205D7C /* DJTBrowserView.m in Sources */,
+				F38838632192BCB8009EC9E5 /* DJTCommunityCellLayout.m in Sources */,
 				F33D420A20EF62B60071AFD0 /* DJTTabBar.m in Sources */,
 				F3757F6820F7065100A622A1 /* DJTTripartiteFeatureViewController.m in Sources */,
+				F38838602192BBA6009EC9E5 /* DJTCommunityCell.m in Sources */,
+				F305E43321B92CE7000F29F4 /* DJTRefreshFooter.m in Sources */,
+				F31FE8C621F9921100205D7C /* DJTPhotoListModel.m in Sources */,
 				F3923B4C20EF4FB80078A2A3 /* main.m in Sources */,
+				F31FE8CC21F9C52400205D7C /* DJTPhotoBrowserView.m in Sources */,
+				F31FE8C921F9997100205D7C /* DJTProgressView.m in Sources */,
+				F35A52BD21F599C1000945AC /* DJTStatusHelper.m in Sources */,
+				F3EE09C821FEAEB20006765B /* DJTPhotoBrowserCollectionViewCell.m in Sources */,
 				F33D420420EF54AC0071AFD0 /* DJTNavigationViewController.m in Sources */,
+				F3A2201B21BE13B900AB657D /* YYControl.m in Sources */,
 				F347AD6720F8A22C0024712A /* DJTitleScrollView.m in Sources */,
 				F3757F6F20F7377200A622A1 /* DJTNavBar.m in Sources */,
 				F3757F5C20F7042B00A622A1 /* DJTViewFeatureViewController.m in Sources */,
+				F388385C2192B9F7009EC9E5 /* testViewController.m in Sources */,
 				F33D420120EF53FD0071AFD0 /* DJTMainViewController.m in Sources */,
+				F388386A2193069F009EC9E5 /* DJTBaseVM.m in Sources */,
 				F3757F7220F875FC00A622A1 /* DJTViewFeatureNavBar.m in Sources */,
+				F305E43021B92CAE000F29F4 /* DJTRefreshHeader.m in Sources */,
 				F3923B3E20EF4FB70078A2A3 /* AppDelegate.m in Sources */,
+				F388386F21930DC5009EC9E5 /* DJTCommunityVM.m in Sources */,
 				F3757F6520F7062C00A622A1 /* DJTPracticalFeatureViewController.m in Sources */,
 				F3757F6C20F70C9E00A622A1 /* UIView+Custom.m in Sources */,
 			);

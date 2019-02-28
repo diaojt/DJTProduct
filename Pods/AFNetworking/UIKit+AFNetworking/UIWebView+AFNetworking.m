@@ -58,7 +58,10 @@
         _af_defaultHTTPSessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     });
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu"
     return objc_getAssociatedObject(self, @selector(sessionManager)) ?: _af_defaultHTTPSessionManager;
+#pragma clang diagnostic pop
 }
 
 - (void)setSessionManager:(AFHTTPSessionManager *)sessionManager {
@@ -72,7 +75,10 @@
         _af_defaultResponseSerializer = [AFHTTPResponseSerializer serializer];
     });
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu"
     return objc_getAssociatedObject(self, @selector(responseSerializer)) ?: _af_defaultResponseSerializer;
+#pragma clang diagnostic pop
 }
 
 - (void)setResponseSerializer:(AFHTTPResponseSerializer<AFURLResponseSerialization> *)responseSerializer {
@@ -86,25 +92,22 @@
             success:(NSString * (^)(NSHTTPURLResponse *response, NSString *HTML))success
             failure:(void (^)(NSError *error))failure
 {
-    [self loadRequest:request
-             MIMEType:nil
-     textEncodingName:nil
-             progress:progress
-              success:^NSData *(NSHTTPURLResponse *response, NSData *data) {
-                  NSStringEncoding stringEncoding = NSUTF8StringEncoding;
-                  if (response.textEncodingName) {
-                      CFStringEncoding encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)response.textEncodingName);
-                      if (encoding != kCFStringEncodingInvalidId) {
-                          stringEncoding = CFStringConvertEncodingToNSStringEncoding(encoding);
-                      }
-                  }
-                  NSString *string = [[NSString alloc] initWithData:data encoding:stringEncoding];
-                  if (success) {
-                      string = success(response, string);
-                  }
-                  return [string dataUsingEncoding:stringEncoding];
-              }
-              failure:failure];
+    [self loadRequest:request MIMEType:nil textEncodingName:nil progress:progress success:^NSData *(NSHTTPURLResponse *response, NSData *data) {
+        NSStringEncoding stringEncoding = NSUTF8StringEncoding;
+        if (response.textEncodingName) {
+            CFStringEncoding encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)response.textEncodingName);
+            if (encoding != kCFStringEncodingInvalidId) {
+                stringEncoding = CFStringConvertEncodingToNSStringEncoding(encoding);
+            }
+        }
+
+        NSString *string = [[NSString alloc] initWithData:data encoding:stringEncoding];
+        if (success) {
+            string = success(response, string);
+        }
+
+        return [string dataUsingEncoding:stringEncoding];
+    } failure:failure];
 }
 
 - (void)loadRequest:(NSURLRequest *)request
@@ -122,28 +125,27 @@
     self.af_URLSessionTask = nil;
 
     __weak __typeof(self)weakSelf = self;
-    __block NSURLSessionDataTask *dataTask;
+    NSURLSessionDataTask *dataTask;
     dataTask = [self.sessionManager
-                dataTaskWithRequest:request
-                uploadProgress:nil
-                downloadProgress:nil
-                completionHandler:^(NSURLResponse * _Nonnull response, id  _Nonnull responseObject, NSError * _Nullable error) {
-                    __strong __typeof(weakSelf) strongSelf = weakSelf;
-                    if (error) {
-                        if (failure) {
-                            failure(error);
-                        }
-                    } else {
-                        if (success) {
-                            success((NSHTTPURLResponse *)response, responseObject);
-                        }
-                        [strongSelf loadData:responseObject MIMEType:MIMEType textEncodingName:textEncodingName baseURL:[dataTask.currentRequest URL]];
+            GET:request.URL.absoluteString
+            parameters:nil
+            progress:nil
+            success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+                __strong __typeof(weakSelf) strongSelf = weakSelf;
+                if (success) {
+                    success((NSHTTPURLResponse *)task.response, responseObject);
+                }
+                [strongSelf loadData:responseObject MIMEType:MIMEType textEncodingName:textEncodingName baseURL:[task.currentRequest URL]];
 
-                        if ([strongSelf.delegate respondsToSelector:@selector(webViewDidFinishLoad:)]) {
-                            [strongSelf.delegate webViewDidFinishLoad:strongSelf];
-                        }
-                    }
-                }];
+                if ([strongSelf.delegate respondsToSelector:@selector(webViewDidStartLoad:)]) {
+                    [strongSelf.delegate webViewDidFinishLoad:strongSelf];
+                }
+            }
+            failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+                if (failure) {
+                    failure(error);
+                }
+            }];
     self.af_URLSessionTask = dataTask;
     if (progress != nil) {
         *progress = [self.sessionManager downloadProgressForTask:dataTask];

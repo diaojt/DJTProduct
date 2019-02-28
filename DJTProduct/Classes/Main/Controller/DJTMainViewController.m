@@ -15,6 +15,7 @@
 #import "DJTTripartiteFeatureViewController.h"
 
 @implementation DJTMainViewController
+
 + (void)initialize
 {
     UITabBarItem *appearance = [UITabBarItem appearance];
