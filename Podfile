@@ -15,7 +15,7 @@ pod 'Esun_LogKit',         '~>0.1.0'
 pod 'Esun_NetTool',        '~>0.1.0'
 
 pod 'AFNetworking' , '~>3.1.0'
-pod 'YYKit'
+pod 'YYKit','~> 1.0.9'
 pod 'MJRefresh', '~> 3.1.12'
 pod 'Masonry','~>1.1.0'
 pod 'SDWebImage', '~> 3.8.0'

@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface EsunLog : NSObject
 
+@property (nonatomic, strong) DDFileLogger *fileLoger;
+
++ (instancetype)shareInstance;
 
 /**
  捕捉崩溃日志，包含SIGException和UNCaughtException
@@ -43,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
  使用ddlog
  */
 + (void)useDDLog;
+
 
 @end
 

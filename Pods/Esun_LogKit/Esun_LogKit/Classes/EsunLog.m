@@ -12,6 +12,18 @@
 
 @implementation EsunLog
 
++ (instancetype)shareInstance
+{
+    static EsunLog *esunLog = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        esunLog = [[EsunLog alloc]init];
+        esunLog.fileLoger = [[DDFileLogger alloc]init];
+        
+    });
+    return esunLog;
+}
+
 + (void)catchException
 {
     //未捕捉到的异常 比如数组越界
@@ -23,7 +35,8 @@
 
 + (void)saveFileRollingFrequency:(NSInteger)frequency maxFileNum:(NSInteger)fileNum andLogLevel:(DDLogLevel)level
 {
-    DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
+    EsunLog *esunLog = [EsunLog shareInstance];
+    DDFileLogger *fileLogger = esunLog.fileLoger;
     fileLogger.rollingFrequency = 60 * 60 * 24* frequency; // 每个文件超过24小时后会被新的日志覆盖
     fileLogger.logFileManager.maximumNumberOfLogFiles = fileNum;  //最多保存7个日志文件
     [DDLog addLogger:fileLogger withLevel:level];//将对应等级信息写入文件

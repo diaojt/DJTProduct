@@ -14,15 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (3.4.2):
-    - CocoaLumberjack/Default (= 3.4.2)
-    - CocoaLumberjack/Extensions (= 3.4.2)
-  - CocoaLumberjack/Default (3.4.2)
-  - CocoaLumberjack/Extensions (3.4.2):
-    - CocoaLumberjack/Default
+  - CocoaLumberjack (3.5.1):
+    - CocoaLumberjack/Core (= 3.5.1)
+  - CocoaLumberjack/Core (3.5.1)
   - Esun_DataPersistence (0.1.0):
     - SAMKeychain
-  - Esun_LogKit (0.1.0):
+  - Esun_LogKit (0.1.1):
     - CocoaLumberjack
   - Esun_NetTool (0.1.0):
     - AFNetworking (~> 3.1.0)
@@ -49,7 +46,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.12)
   - SDWebImage (~> 3.8.0)
   - "XLPhotoBrowser+CoderXL"
-  - YYKit
+  - YYKit (~> 1.0.9)
 
 SPEC REPOS:
   "http://gitapp@git.boss.com/ios/ComponentKit/ComponentIndex.git":
@@ -69,9 +66,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  CocoaLumberjack: 2101f8a5508197a305e737d16c5c2e9e2157628c
   Esun_DataPersistence: 5f3ae9aff9381d6d7aa8d07f14b4fd236e8816b7
-  Esun_LogKit: b69d543ee88af24f10f75472af041b76c7823756
+  Esun_LogKit: 510f1ad4c338dd32db18c1bdea18fdb42663ab26
   Esun_NetTool: 7016e63cc9688966b44989adb5f29c0d9df6c94d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
@@ -81,6 +78,6 @@ SPEC CHECKSUMS:
   "XLPhotoBrowser+CoderXL": 8eb15a7155ff1c837459d0f060c14e91011fb8b5
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: f349d32e0931242c1e6897d6b3a8036591628e40
+PODFILE CHECKSUM: 95c50aed05f78847031036adb13eea3e1618c36c
 
 COCOAPODS: 1.5.3
